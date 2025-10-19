@@ -1,0 +1,342 @@
+:root {
+  --background-color: #A9D6E5;
+  --text-color-bright: #FFFFEB;
+  --text-color-dark: #012A4A;
+  --color-1: #012A4A;
+  --color-2: #013A63;
+  --color-3: #01497C;
+  --color-4: #014F86;
+  --color-5: #2A6F97;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: red solid 1px; */
+    background-color: var(--background-color);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--text-color-dark);
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+img {
+    max-inline-size: 100%;
+}
+.wrapper {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+}
+
+#introduction {
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#intro-text-1 {
+    margin-bottom: 1em;
+}
+
+.profile-photo {
+    border-radius: 0 40px 40px 0;
+    display: block;
+    background-color: var(--color-1);    
+    height: auto;
+    width: clamp(320px, 30vw, 425px);
+}
+
+.photo-container {
+    background-color: var(--color-1);
+}
+
+.salute-container {
+    grid-area: "box-1";
+    background-color: var(--color-1);
+    display: flex;
+    align-items: center;
+}
+
+.introduction {
+    background-color: var(--color-1);
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: "box-1"
+    "box-2";
+    width: 50vw;
+    flex-grow: 0.7;
+    height: auto;
+}
+
+.introduction-text-container {
+    grid-area: "box-2";
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    /* width: clamp(); */
+    /* border: red solid 2px; */
+}
+
+.introduction-text {
+    background-color: var(--color-1);
+    color: var(--text-color-bright);
+    width: clamp(200px, 50vw, 600px);
+}
+
+.salute {
+    background-color: var(--color-1);
+    color: var(--text-color-bright);
+}
+
+@media screen and (max-width: 720px) {
+    #introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .introduction-text-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+    }
+
+    .salute {
+        margin: 0;
+        text-align: center;
+    }
+
+    .introduction {
+    background-color: var(--color-1);
+    flex-grow: 0.8;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: clamp(200px, 40vw, 600px);
+    width: 50vw;
+    }
+
+    .profile-photo {
+        border-radius: 40px;
+    }
+
+    .photo-container {
+        margin: 10vw;
+    }
+
+
+    
+}
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* gap: 2rem; */
+}
+
+.experience-title {
+    color: var(--text-color-dark);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 700;
+    text-align: center;
+}
+
+.xp-card-container {
+    height: auto;
+    width: 100%;
+    /* border: red solid 2px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+}
+
+.xp-card {
+    background-color: var(--color-1);
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;                      
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 9px rgba(0, 0, 0, 0.2);
+    width: clamp(20rem, 30vw, 21rem);
+}
+
+.xp-card-title-container {
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+.xp-card-title {
+    background-color: var(--color-1);
+    color: var(--text-color-bright);
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    font-weight: 600;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.xp-card-dates {
+    background-color: var(--color-1);
+    color: var(--text-color-bright);
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.xp-card-content {
+    text-align: left;
+    margin: 2rem;
+    margin-top: 0;
+}
+
+.xp-card-content-text {
+    background-color: var(--color-1);
+    color: var(--text-color-bright);
+    font-size: 1rem;
+}
+
+#education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edu-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.edu-title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.edu-card-content {
+    text-align: left;
+    margin-top: 2vw;
+    width: auto;
+    /* max-width: 65ch; */
+}
+
+.edu-card {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: clamp(50%, 65rem,  80%);
+    gap: clamp(5%);
+
+}
+
+.edu-card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    max-width: 70%;
+}
+
+.edu-image-container {
+    /* Give the container a fixed width and prevent it from shrinking */
+    flex-basis: clamp(11rem, 29vw, 15rem);
+}
+
+.edu-image {
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: all 0.5s ease-out;
+    filter: brightness(95%);
+}
+
+.edu-image:hover {
+    filter: brightness(105%);
+    box-shadow: #012a4a66 0px 3px 20px;
+}
+
+#hacettepe-image-container {
+    margin-left: 2vw;
+}
+
+#unitartu-image-container {
+    margin-right: 2vw;
+}
+
+@media screen and (max-width: 720px) {
+    #unitartu-card {
+        flex-direction: column-reverse;
+    }
+
+    #hacettepe-card {
+        flex-direction: column;
+    }
+
+    .edu-image-container {
+        margin: 3vw;
+        margin-top: 0;
+        /* width: clamp(12rem 18rem); */
+        width: 30vw;
+    }
+
+    .edu-card {
+        align-items: center;
+    }
+
+    .edu-card-content-wrapper {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .introduction {
+        width: 40vw;
+    }
+}
+
+.section-title {
+    margin: 3vw;
+}
+
+h2 {
+    font-size: 2rem;
+}
