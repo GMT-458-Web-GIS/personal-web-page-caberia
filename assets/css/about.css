@@ -170,7 +170,7 @@ img {
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* gap: 2rem; */
+    margin-bottom: 4vh;
 }
 
 .experience-title {
