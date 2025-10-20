@@ -1,0 +1,45 @@
+:root {
+  --background-color: #A9D6E5;
+  --text-color-bright: #FFFFEB;
+  --text-color-dark: #012A4A;
+  --color-1: #012A4A;
+  --color-2: #013A63;
+  --color-3: #01497C;
+  --color-4: #014F86;
+  --color-5: #2A6F97;
+}
+
+* {
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -user-drag: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--text-color-dark);
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 6rem;
+    letter-spacing: -0.50rem;
+}
+
+img {
+    pointer-events: none;
+    max-inline-size: 100%;
+}
