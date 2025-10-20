@@ -38,6 +38,7 @@ a {
 h1 {
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
+    letter-spacing: none;
 }
 
 p {
