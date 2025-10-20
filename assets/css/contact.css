@@ -3,3 +3,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+h1 {
+    font-weight: 300;
+    font-size: 6rem;
+    letter-spacing: -0.50rem;
+}

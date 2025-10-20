@@ -33,12 +33,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1 {
-    font-weight: 300;
-    font-size: 6rem;
-    letter-spacing: -0.50rem;
-}
-
 img {
     pointer-events: none;
     max-inline-size: 100%;
