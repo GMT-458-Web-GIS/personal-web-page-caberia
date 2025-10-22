@@ -26,7 +26,14 @@ const travelledPlaces = [
   { name: 'Erdemli (Tömük)', coords: [34.4250, 36.6583] },
   { name: 'Alanya', coords: [31.9998, 36.5438] },
   { name: 'Amasra', coords: [32.3861, 41.7461] },
-  { name: 'Safranbolu', coords: [32.6865, 41.2562] }
+  { name: 'Safranbolu', coords: [32.6865, 41.2562] },
+  { name: 'Adrasan', coords: [30.2811, 36.3125] },
+  { name: 'Doha', coords: [51.5310, 25.2854] },
+  { name: 'Çıralı', coords: [30.4746, 36.4172] },
+  { name: 'Güre', coords: [26.9333, 39.5833] },
+  { name: 'Şile', coords: [29.6139, 41.1758] },
+  { name: 'Dikili', coords: [26.8892, 39.0719] },
+  { name: 'Silivri', coords: [28.2461, 41.0736] }
 ];
 
 const placeFeatures = travelledPlaces.map(place => {
