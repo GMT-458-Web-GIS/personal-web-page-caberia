@@ -33,7 +33,11 @@ const travelledPlaces = [
   { name: 'Güre', coords: [26.9333, 39.5833] },
   { name: 'Şile', coords: [29.6139, 41.1758] },
   { name: 'Dikili', coords: [26.8892, 39.0719] },
-  { name: 'Silivri', coords: [28.2461, 41.0736] }
+  { name: 'Silivri', coords: [28.2461, 41.0736] },
+  { name: 'Konya', coords: [32.4932, 37.8746] },
+  { name: 'Sapanca', coords: [30.2558, 40.6975] },
+  { name: 'Gebze', coords: [29.4358, 40.8022] },
+  { name: 'Yedigöller (Bolu)', coords: [31.7483, 40.8525] }
 ];
 
 const placeFeatures = travelledPlaces.map(place => {
