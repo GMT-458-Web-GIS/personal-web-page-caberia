@@ -87,7 +87,11 @@ p {
     font-size: clamp(2.5rem, 4vw, 5rem);
     margin: 0;
     padding: 0;
-    margin-bottom: 0.25vw;
+    margin-bottom: 0.5vh;
+    font-size: clamp(45px, 7vw, 90px);
+    font-weight: 350;
+
+    letter-spacing: -0.2rem;
 }
 
 .tag {
@@ -110,7 +114,7 @@ p {
     padding: 0;
     height: max(10vh, 5rem);
     width: clamp(15rem, 50vw, 80rem);
-    border-radius: 10px;
+    border-radius: 15px;
     transition: all 0.5s ease-out;
 }
 

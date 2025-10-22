@@ -6,6 +6,7 @@ body {
 
 h1 {
     font-weight: 300;
-    font-size: 6rem;
-    letter-spacing: -0.50rem;
+    font-size: clamp(40px, 5rem, 50px);
+    letter-spacing: -0.25rem;
+    text-align: center;
 }
