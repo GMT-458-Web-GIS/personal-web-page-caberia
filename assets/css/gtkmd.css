@@ -1,4 +1,6 @@
-@import url('/assets/css/base.css');
+/* gtmkd.css */
+
+@import url('base.css');
 
 html, body {
   margin: 0;
